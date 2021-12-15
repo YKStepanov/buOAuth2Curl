@@ -1,7 +1,7 @@
 # buOAuth2Curl
     Php simple authorization class using OAuth2 protocol, tested and configured on google.
 # buGooglePhoto
-    Сlass for working with Google Photo API.
+    РЎlass for working with Google Photo API.
 # Working examples
  +ul Simple authorization in google using OAuth2 protocol
  +ul Getting a list of video and photo files
@@ -9,6 +9,6 @@
  +ul Download all files and put them on your disk
 
 # Description in Russian
-[Php класс для Google Photo API OAuth2, настройка работы под локальный веб-сервер OpenServer](http://http://bugacms.com/?i=284)
+[Php РєР»Р°СЃСЃ РґР»СЏ Google Photo API OAuth2, РЅР°СЃС‚СЂРѕР№РєР° СЂР°Р±РѕС‚С‹ РїРѕРґ Р»РѕРєР°Р»СЊРЅС‹Р№ РІРµР±-СЃРµСЂРІРµСЂ OpenServer](http://http://bugacms.com/?i=284)
 
 
