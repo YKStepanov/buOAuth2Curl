@@ -9,6 +9,6 @@
  +ul Download all files and put them on your disk
 
 # Description in Russian
-[Php класс для Google Photo API OAuth2, настройка работы под локальный веб-сервер OpenServer](http://http://bugacms.com/?i=284)
+[Php класс для Google Photo API OAuth2, настройка работы под локальный веб-сервер OpenServer](http://bugacms.com/?i=284)
 
 
