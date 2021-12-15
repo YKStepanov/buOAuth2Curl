@@ -1,11 +1,16 @@
 <?php
 require_once 'buOAuth2Curl.class.php';
 
-// INSTALL CORRECTLY redirect_uri ON THIS PAGE !!!
+
 $arrGoogleApiID = [
-    'client_id' =>
-    '193187803346-vgmluu3rh3ujel8esqnc42dvfs2l5ets.apps.googleusercontent.com',
-    'client_secret' => 'zDpy0vGRdrn_snhuGBCENYZB',
+//set your client id and client secret
+
+    'client_id' => '???????',
+    'client_secret' => '???????',
+
+// INSTALL CORRECTLY redirect_uri ON THIS PAGE !!!
+// use redirect.php to create an intermediate redirect if necessary
+
     'redirect_uri' => 'http://localhost/redirect.php?target=http://buOAuth2Curl/search.php',
     'scope' => 'email profile https://www.googleapis.com/auth/photoslibrary',
 

@@ -1,12 +1,16 @@
 <?php
 require_once 'buOAuth2Curl.class.php';
 
-// INSTALL CORRECTLY redirect_uri ON THIS PAGE !!!
 $arrGoogleApiID = [
-    'client_id' =>
-    '193187803346-vgmluu3rh3ujel8esqnc42dvfs2l5ets.apps.googleusercontent.com',
-    'client_secret' => 'zDpy0vGRdrn_snhuGBCENYZB',
-    'redirect_uri' => 'http://localhost/redirect.php?target=http://buOAuth2Curl/download.php',
+//set your client id and client secret
+
+    'client_id' => '???????',
+    'client_secret' => '???????',
+
+// INSTALL CORRECTLY redirect_uri ON THIS PAGE !!!
+// use redirect.php to create an intermediate redirect if necessary
+
+    'redirect_uri' => 'http://localhost/redirect.php?target=http://buOAuth2Curl/search.php',
     'scope' => 'email profile https://www.googleapis.com/auth/photoslibrary',
 
 ];
@@ -22,7 +26,7 @@ if( $gApi->checkAuth() ){// authorized let's get to work
     echo "Hello, authorization successful! Start download! <br> ";
     flush();
 
-    set_time_limit(0); // îòêëþ÷àåì ëåìèò âðåìåíè
+    set_time_limit(0); // Ð¾Ñ‚ÐºÐ»ÑŽÑ‡Ð°ÐµÐ¼ Ð»ÐµÐ¼Ð¸Ñ‚ Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸
     while( $res =   $gApi->getItems( ) ){
         foreach ($res as $key => $item) {
             $path = $gApi->downloadItem( $item, 'D:\TMP'  );
